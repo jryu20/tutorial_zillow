@@ -1,0 +1,88 @@
+body.collection {
+    background-color: #fffaf1;
+}
+
+/* Style the header */
+h1.collection {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin: 20px 0;
+}
+  
+/* Style the navigation menu */
+nav.collection {
+    background-color: #477a49;
+    color: white;
+    padding: 10px;
+}
+  
+.menu.collection {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.menu.collection li {
+    margin: 0 20px;
+}
+  
+.menu.collection a {
+    color: white;
+    text-decoration: none;
+}
+  
+.menu.collection a:hover {
+    text-decoration: underline;
+}
+  
+/* Style the form */
+form.collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+label.collection {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+input[type="number"].collection,
+select.collection {
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+  
+input[type="submit"].collection {
+    background-color: #477a49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+input[type="submit"].collection:hover {
+    background-color: #1f5021;
+}
+  
+/* Style the entered data */
+p.collection {
+    font-size: 18px;
+    margin: 10px auto;
+    color: #333;
+    text-align: center;
+}
+
+
+

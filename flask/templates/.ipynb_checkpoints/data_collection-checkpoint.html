@@ -1,0 +1,56 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<html>
+
+<h1 class="collection">{{ city }}</h1>
+<nav class="collection">
+    <ul class="menu collection">
+        <li class="collection"><a href="{{ url_for('main') }}">Home</a></li>
+        <li class="collection"><a href="{{ url_for('visualization', city=city) }}">Geographic Visualization</a></li>
+        <li class="collection"><a href="{{ url_for('data_collection', city=city) }}">Data Collection & Prediction</a></li>
+        <li class="collection"><a href="{{ url_for('morevisualization', city=city) }}">Data Visualization</a></li>
+        <li class="collection"><a href="{{ url_for('view_data', city=city) }}">View Data</a></li>
+    </ul>
+</nav>
+<h1 class="collection">{% block title %}Data Collection{% endblock %}</h1>
+{% block content %}
+{% if prediction %}
+    <p style ="font-size: 20px; text-align: center;">
+        The predicted price for this property is {{ price }}</p>
+{% endif %}
+<form class="collection" method="post">
+    <label for="bed" class="collection">Bedrooms:</label>
+    <input type="number" name="bed" id="bed" min="0" class="collection">
+    <br><br>
+
+    <label for="bath" class="collection">Bathrooms:</label>
+    <input type="number" name="bath" id="bath" min="0" class="collection">
+    <br><br>
+
+    <label for="sqft" class="collection">Square feet:</label>
+    <input type="number" name="sqft" id="sqft" min="0" class="collection">
+    <br><br>
+
+    <label for="year_made" class="collection">Year made:</label>
+    <input type="number" name="year_made" id="year_made" min="1800" class="collection">
+    <br><br>
+
+    <label for="home_type" class="collection">Home type:</label>
+    <select name="home_type" id="home_type" class="collection">
+        <option value="">-- Select an Option --</option>
+        <option value="apartment">Apartment</option>
+        <option value="condo">Condo</option>
+        <option value="lot">Lot</option>
+        <option value="multi_family">Multi Family Home</option>
+        <option value="single_family">Single Family Home</option>
+        <option vale="townhouse">Townhouse</option>
+    </select>
+
+    <br><br>
+    <label for="zipcode" class="collection">Zipcode:</label>
+    <input type="number" name="zipcode" id="zipcode" min="10000" class="collection">
+    <br><br>
+
+    <input type="submit" value="Submit" class="collection">
+</form>
+{% endblock %}

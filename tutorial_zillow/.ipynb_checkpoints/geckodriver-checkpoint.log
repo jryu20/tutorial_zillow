@@ -1,0 +1,48 @@
+1677478768687	geckodriver	INFO	Listening on 127.0.0.1:60862
+1677478771716	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60863" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ryan\\AppData\\Local\\Temp\\rust_mozprofileCKlBDM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677478772047	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677478772053	Marionette	INFO	Listening on port 60879
+WebDriver BiDi listening on ws://127.0.0.1:60863
+Read port: 60879
+1677478772341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ryan\\AppData\\Local\\Temp\\rust_mozprofileCKlBDM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60863/devtools/browser/778563f3-4a05-4b23-af66-5c11dd9e3c8e
+JavaScript warning: https://z.moatads.com/zillowgamdisplay501800116559/moatad.js#moatClientLevel1=4644027748&moatClientLevel2=3126578869&moatClientLevel3=6184611274&moatClientLevel4=138421009639&moatClientSlicer1=31751151&moatClientSlicer2=21885118207&zMoatPS=&zMoatAdUnitPath=/7449/zillow/search_results_1/buy_general/search_1&zMoatSZ=0x0, line 238: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/7Lg35lthZ5bMa2_BIKuudMRVkX-RcQ_BXpABKM-oZgA.js line 2 > eval line 4628 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677478880356	geckodriver	INFO	Listening on 127.0.0.1:61276
+1677478883397	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61277" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ryan\\AppData\\Local\\Temp\\rust_mozprofileWMb785"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677478883729	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677478883734	Marionette	INFO	Listening on port 61286
+WebDriver BiDi listening on ws://127.0.0.1:61277
+Read port: 61286
+1677478884027	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ryan\\AppData\\Local\\Temp\\rust_mozprofileWMb785\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61277/devtools/browser/b1f02aa7-8a0f-46d7-a4a7-4cad75a04903
+JavaScript warning: https://z.moatads.com/zillowgamdisplay501800116559/moatad.js#moatClientLevel1=102939351&moatClientLevel2=2707579588&moatClientLevel3=5398313903&moatClientLevel4=138314257806&moatClientSlicer1=31751151&moatClientSlicer2=21888263364&zMoatPS=&zMoatAdUnitPath=/7449/zillow/search_results_1/buy_general/b_right_p1&zMoatSZ=1x1, line 238: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/zillowgamdisplay501800116559/moatad.js#moatClientLevel1=4644027748&moatClientLevel2=3126578869&moatClientLevel3=6184611274&moatClientLevel4=138421009639&moatClientSlicer1=31751151&moatClientSlicer2=21885118207&zMoatPS=&zMoatAdUnitPath=/7449/zillow/search_results_1/buy_general/search_1&zMoatSZ=0x0, line 238: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/7Lg35lthZ5bMa2_BIKuudMRVkX-RcQ_BXpABKM-oZgA.js line 2 > eval line 197 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1677479058120	geckodriver	INFO	Listening on 127.0.0.1:61713
+1677479061168	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "--remote-debugging-port" "61714" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\ryan\\AppData\\Local\\Temp\\rust_mozprofileSahBQA"
+*** You are running in headless mode.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1677479061527	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1677479061532	Marionette	INFO	Listening on port 61724
+WebDriver BiDi listening on ws://127.0.0.1:61714
+Read port: 61724
+1677479061755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\ryan\\AppData\\Local\\Temp\\rust_mozprofileSahBQA\\search.json.mozlz4", (void 0)))
+console.error: ({})
+DevTools listening on ws://127.0.0.1:61714/devtools/browser/f602ddca-86e8-44cf-a707-97c934c703bb
+JavaScript warning: https://pagead2.googlesyndication.com/bg/7Lg35lthZ5bMa2_BIKuudMRVkX-RcQ_BXpABKM-oZgA.js line 2 > eval line 6190 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/zillowgamdisplay501800116559/moatad.js#moatClientLevel1=4644027748&moatClientLevel2=3126578869&moatClientLevel3=6184611274&moatClientLevel4=138418359939&moatClientSlicer1=31751151&moatClientSlicer2=21885118207&zMoatPS=&zMoatAdUnitPath=/7449/zillow/search_results_1/buy_general/search_1&zMoatSZ=0x0, line 238: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://z.moatads.com/zillowgamdisplay501800116559/moatad.js#moatClientLevel1=102939351&moatClientLevel2=2707579588&moatClientLevel3=5398313900&moatClientLevel4=138314256008&moatClientSlicer1=31751151&moatClientSlicer2=21888263364&zMoatPS=&zMoatAdUnitPath=/7449/zillow/search_results_1/buy_general/b_right_p1&zMoatSZ=1x1, line 238: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/6N6xbrRFdMEff8Jis_shwjAW5G8di4zE4BhK3Aw40Jc.js line 2 > eval line 5853 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.

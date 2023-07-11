@@ -1,0 +1,61 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<html>
+    <head>
+        <title>Data Visualization</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <h1 class = collection>{{ city }}</h1>
+        <nav class="collection">
+            <ul class="menu collection">
+                <li class="collection"><a href="{{ url_for('main') }}">Home</a></li>
+                <li class="collection"><a href="{{ url_for('visualization', city=city) }}">Geographic Visualization</a></li>
+                <li class="collection"><a href="{{ url_for('data_collection', city=city) }}">Data Collection</a></li>
+                <li class="collection"><a href="{{ url_for('morevisualization', city=city) }}">Data Visualization</a></li>
+                <li class="collection"><a href="{{ url_for('view_data', city=city) }}">View Data</a></li>
+            </ul>
+        </nav>
+        <h1 class = "collection">
+            Geographic Visualization
+        </h1>
+        
+        
+        <div id="graph1"></div>
+        <br>
+        <div id="graph2"></div>
+        <h3>Customize the Visualization</h3>
+        <p1>
+            You can also customize the graph by applying the following filters:
+        </p1>
+        <form method="post">
+            <select name="features">
+                <option value="bedrooms">Bedrooms</option>
+                <option value="bathrooms">Bathrooms</option>
+                <input type="text" name="number" placeholder="Number of">
+            </select>
+            <br>
+            <select name="features_min_max">
+                <option value="price">Price</option>
+                <option value="livingArea">Living Area</option>
+                <option value="yearBuilt">Year Built</option>
+                <input type="text" name="minimum" placeholder="Minimum">
+                <input type="text" name="maximum" placeholder="Maximum">
+            </select>
+            <br>
+            <p1>Choose home type:</p1><br>
+            <input type="checkbox" name="apartment" value="APARTMENT">Apartment<br>
+            <input type="checkbox" name="condo" value="CONDO">Condo<br>
+            <input type="checkbox" name="lot" value="LOT">Lot</option><br>
+            <input type="checkbox" name="multi_family" value="MULTI_FAMILY">Multi Family Home<br>
+            <input type="checkbox" name="townhouse" value="TOWNHOUSE">Townhouse</option><br>
+            <button type="submit" class="btn btn-primary">Apply</button>
+        </form>
+    </body>
+    <script>
+        Plotly.newPlot("graph1", {{ graph1 | safe }})
+    </script>
+    <script>
+        Plotly.newPlot("graph2", {{ graph2 | safe }})
+    </script>
+</html>

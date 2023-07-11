@@ -1,0 +1,106 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <style>
+    	
+      body {
+        background-color: #ffffff;
+      }
+
+      body,
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #333333;
+      }
+      
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+    
+
+    </style>
+    <title>View the Data</title>
+  </head>
+
+  <body>
+              <h1 class = collection>{{ city }}</h1>
+        <nav class="collection">
+            <ul class="menu collection">
+                <li class="collection"><a href="{{ url_for('main') }}">Home</a></li>
+                <li class="collection"><a href="{{ url_for('visualization', city=city) }}">Geographic Visualization</a></li>
+                <li class="collection"><a href="{{ url_for('data_collection', city=city) }}">Data Collection & Prediction</a></li>
+                <li class="collection"><a href="{{ url_for('morevisualization', city=city) }}">Data Visualization</a></li>
+                <li class="collection"><a href="{{ url_for('view_data', city=city) }}">View Data</a></li>
+            </ul>
+        </nav>
+    <header>
+      <h1>View the Data</h1>
+    </header>
+
+    <main>
+      <section>
+        <form method="POST" action="/view_data">
+          <label for="name">Choose the name of the city you want to view the dataset for:</label>
+          <select id="names" name="name">
+            <option value="Los Angeles">Los Angeles</option>
+            <option value="New York">New York</option>
+            <option value="Chicago">Chicago</option>
+            <option value="San Jose">San Jose</option>
+            <option value="San Antonio">San Antonio</option>
+            <option value="Dallas">Dallas</option>
+            <option value="San Diego">San Diego</option>
+            <option value="Phileadelphia">Phileadelphia
+            <option value="Phoenix">Phoenix  </option>
+            <option value="Houston">Houston  </option>
+          </select>
+          <br><br>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Currently displaying the raw data for {{city}}: </h2>
+        {% for table in tables %}
+        <h3>{{titles[loop.index]}}</h3>
+        {{ table|safe }}
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<html>
+    <head>
+        <title>Data Visualization</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    </head>
+    <body>
+        <h1 class = collection>{{ city }}</h1>
+        <nav class="collection">
+            <ul class="menu collection">
+                <li class="collection"><a href="{{ url_for('main') }}">Home</a></li>
+                <li class="collection"><a href="{{ url_for('visualization', city=city) }}">Geographic Visualization</a></li>
+                <li class="collection"><a href="{{ url_for('data_collection', city=city) }}">Data Collection & Prediction</a></li>
+                <li class="collection"><a href="{{ url_for('morevisualization', city=city) }}">Data Visualization</a></li>
+                <li class="collection"><a href="{{ url_for('view_data', city=city) }}">View Data</a></li>
+            </ul>
+        </nav>
+        <h1 class = "collection">
+            Data Visualization
+        </h1>
+        <h2>Histograms</h2>
+        <div id="graph1" style="display: inline-block;"></div> 
+        <div id="graph2" style="display: inline-block;"></div>
+        <div id="graph3" style="display: inline-block;"></div>
+        <div id="graph4" style="display: inline-block;"></div>
+        <div id="graph5" style="display: inline-block;"></div>
+        <div id="graph6" style="display: inline-block;"></div>
+        <h2>Scatterplots</h2>
+        <div id="graph7" style="display: inline-block;"></div>
+        <div id="graph8" style="display: inline-block;"></div>
+        <div id="graph9" style="display: inline-block;"></div>
+    </body>
+    <script>
+        Plotly.newPlot("graph1", {{ graph1 | safe }})
+    </script>
+    <script>
+        Plotly.newPlot("graph2", {{ graph2 | safe }})
+    </script>
+    <script>
+         Plotly.newPlot("graph3", {{ graph3 | safe }})
+    </script>
+    <script>
+         Plotly.newPlot("graph4", {{ graph4 | safe }})
+    </script>
+    <script>
+         Plotly.newPlot("graph5", {{ graph5 | safe }})
+    </script>
+    <script>
+         Plotly.newPlot("graph6", {{ graph6 | safe }})
+    </script>
+    <script>
+         Plotly.newPlot("graph7", {{ graph7 | safe }})
+    </script>
+    <script>
+         Plotly.newPlot("graph8", {{ graph8 | safe }})
+    </script>
+      <script>
+         Plotly.newPlot("graph9", {{ graph9 | safe }})
+    </script>
+</html>

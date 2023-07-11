@@ -1,0 +1,104 @@
+<!doctype html>
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> -->
+<html>
+    <head>
+        <style>
+            h1.webpage_title {text-align: center;
+                font-family: "Arial";
+                font-size: 40px;
+            }
+            span.fade-in::before{
+                font-family: "MV Boli";
+                content: "Los Angeles";
+                font-size: 45px;
+                animation: fadeInAnimation ease 5s;
+                animation-delay: 2s;
+                animation-duration: 30s;
+                animation-fill-mode: forwards;
+                animation-iteration-count: infinite;
+            }
+            @keyframes fadeInAnimation {
+            5.5% {content: "New York"}
+            16.5% {content: "Chicago"}    
+            27.5% {content: "Houston"}
+            38.5% {content: "Phoenix"}
+            49.5% {content: "San Diego"}
+            60.5% {content: "Dallas"}
+            71.5% {content: "Philadelphia"}
+            82.5% {content: "San Antonio"}  
+            93.5% {content: "San Jose"}
+            }
+            svg{
+                display: block;
+                margin: auto;
+            }
+            img {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              width: 50%;
+            }
+            body {
+              overflow: hidden; 
+            }
+            circle:hover {     
+                fill: orange;
+                cursor:pointer;
+            }
+    
+            
+        </style>
+    </head>
+    <body>
+    <title>{% block title %} House Prices{% endblock %} - </title>
+    <nav>
+        <h1 class = "webpage_title">Understanding the Housing Market in  <span class="fade-in">  </span>  </h1> 
+    </nav>
+
+    <svg version="1.1" id = "svgMain" xmlns:xlink="../static/marked_map1.jpg" width = "5000" height = "5000">
+        <image xlink:href="../static/marked_map1.jpg" width = "1000" height = "1000" transform="translate(370,-50)"></image>
+        <a xlink:href="/visualization?city=San Diego">
+            <circle cx="471" cy="498" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>San Diego</title>
+        </a>
+        <a xlink:href="/visualization?city=Los Angeles">
+            <circle cx="448" cy="468" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>Los Angeles</title>
+        </a>
+        <a xlink:href="/visualization?city=San Jose">
+            <circle cx="410" cy="380" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>San Jose</title>
+        </a>
+        <a xlink:href="/visualization?city=Phoenix">
+            <circle cx="570" cy="495" r="10.5" stroke="black" stroke-width="4" fill="red" />
+                <title>Phoenix</title>
+        </a>
+        <a xlink:href="/visualization?city=San Antonio">
+            <circle cx="835" cy="630" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>San Antonio</title>
+        </a>
+        <a xlink:href="/visualization?city=Dallas">
+            <circle cx="867" cy="556" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>Dallas</title>
+        </a>
+        <a xlink:href="/visualization?city=Houston">
+            <circle cx="888" cy="622" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>Houston</title>
+        </a>
+        <a xlink:href="/visualization?city=Chicago">
+            <circle cx="1020" cy="335" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>Chicago</title>
+        </a>
+        <a xlink:href="/visualization?city=Philadelphia">
+            <circle cx="1238" cy="348" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>Philaedelphia</title>
+        </a>
+        <a xlink:href="/visualization?city=New York">
+            <circle cx="1265" cy="320" r="10" stroke="black" stroke-width="4" fill="red" />
+                <title>New York</title>
+        </a>
+    </svg>
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    {% block content %}{% endblock %}
